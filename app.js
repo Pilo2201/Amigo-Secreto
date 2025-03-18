@@ -1,8 +1,8 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-//Varibales
+//Sección de Varibales
 let amigos = [];
 
-//Funciones
+//Sección de Funciones
 function agregarAmigo() {
     let amigo = document.getElementById('amigo').value;
     if (amigo !== '') {
@@ -15,7 +15,7 @@ function agregarAmigo() {
     }
 }
 
-//Función para actualizar la lista de amigos
+//Actualización del listado de amigos
 function actualizarLista() {
     // Obtener el elemento de la lista
     let lista = document.getElementById('listaAmigos');
@@ -28,10 +28,10 @@ function actualizarLista() {
         // Crea un nuevo elemento de lista <li>
         let li = document.createElement('li');
 
-        // Asigna el nombre del amigo al texto del elemento de lista
+        // Entrega el nombre del amigo al texto del elemento de lista
         li.innerHTML = amigos[i];
 
-        // Agrega el nuevo elemento a la lista en el DOM
+        // Incorpora el nuevo elemento a la lista en el DOM
         lista.appendChild(li);
     }
 }
@@ -41,7 +41,7 @@ function actualizarLista() {
             // Generar un índice aleatorio
             let indiceAleatorio = Math.floor(Math.random() * amigos.length);
 
-            // Obtener el nombre sorteado
+            // Obtener el nombre elegido
             let amigoSeleccionado = amigos[indiceAleatorio];
 
             // Mostrar el resultado en la página
